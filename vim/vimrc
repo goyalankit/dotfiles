@@ -42,6 +42,10 @@ Bundle "pangloss/vim-javascript"
 
 Bundle "flazz/vim-colorschemes"
 
+" Better buffers
+Bundle 'jlanzarotta/bufexplorer'
+Bundle "mattn/emmet-vim"
+
 " Vim Advance
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'kchmck/vim-coffee-script'
