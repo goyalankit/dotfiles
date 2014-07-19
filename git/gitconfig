@@ -1,0 +1,13 @@
+[user]
+	name = Ankit Goyal
+	email = ankit3goyal@gmail.com
+[color]
+	ui = true
+[push]
+	default = matching
+[github]
+	user = goyalankit
+[core]
+	excludesfile = /Users/ankit/.gitignore_global
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
