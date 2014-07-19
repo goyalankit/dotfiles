@@ -1,0 +1,13 @@
+# contents of $HOME/.ssh/config
+Host tacc
+  HostName stampede.tacc.utexas.edu
+  User ankitg
+  IdentityFile ~/.ssh/id_rsa_tacc
+
+Host utcs
+  HostName aero.cs.utexas.edu
+  User ankit
+
+Host utcs2
+  HostName altoids.cs.utexas.edu
+  User ankit
