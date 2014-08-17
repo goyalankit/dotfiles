@@ -4,9 +4,14 @@ Host tacc
   User ankitg
   IdentityFile ~/.ssh/id_rsa_tacc
 
+Host github
+  HostName github.com
+  IdentityFile /Users/ankit/.ssh/id_rsa_github
+
 Host utcs
   HostName aero.cs.utexas.edu
   User ankit
+  IdentityFile /Users/ankit/.ssh/id_rsa_utcs
 
 Host utcs2
   HostName altoids.cs.utexas.edu

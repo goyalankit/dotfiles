@@ -50,6 +50,9 @@ Bundle "mattn/emmet-vim"
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'kchmck/vim-coffee-script'
 
+" highlight whitespace
+Bundle 'ntpeters/vim-better-whitespace'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
