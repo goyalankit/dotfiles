@@ -36,6 +36,9 @@ Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "ervandew/supertab"
 
+" vim ruby specific stuff
+Bundle 'vim-ruby/vim-ruby'
+
 " Optional:
 Bundle "honza/vim-snippets"
 Bundle "pangloss/vim-javascript"
@@ -52,6 +55,17 @@ Bundle 'kchmck/vim-coffee-script'
 
 " highlight whitespace
 Bundle 'ntpeters/vim-better-whitespace'
+
+" cpp
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
+" Markdown related plugins
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+" ruby inline execution
+Bundle 't9md/vim-ruby-xmpfilter'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -134,7 +148,20 @@ nnoremap ; :
 " map explorer
 nnoremap <C-e> :Exp<Cr>
 
+let g:vim_markdown_folding_disabled=1
+let g:cpp_class_scope_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+
 " restore last editted position
 source $VIMRUNTIME/vimrc_example.vim
 set backupdir=~/tmp
 set noundofile
+
+
+autocmd FileType ruby nmap <buffer> <D-i> <Plug>(xmpfilter-mark)
+autocmd FileType ruby xmap <buffer> <D-i> <Plug>(xmpfilter-mark)
+autocmd FileType ruby imap <buffer> <D-i> <Plug>(xmpfilter-mark)
+
+autocmd FileType ruby nmap <buffer> <D-r> <Plug>(xmpfilter-run)
+autocmd FileType ruby xmap <buffer> <D-r> <Plug>(xmpfilter-run)
+autocmd FileType ruby imap <buffer> <D-r> <Plug>(xmpfilter-run)
