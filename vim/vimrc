@@ -24,6 +24,9 @@ Bundle 'tacahiroy/ctrlp-funky'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 
+" ack plugin
+Bundle 'mileszs/ack.vim'
+
 " Rails plugins thanks to Tim Pope & others
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-bundler'
@@ -44,6 +47,7 @@ Bundle "honza/vim-snippets"
 Bundle "pangloss/vim-javascript"
 
 Bundle "flazz/vim-colorschemes"
+Bundle "vim-scripts/Align"
 
 " Better buffers
 Bundle 'jlanzarotta/bufexplorer'
@@ -65,6 +69,9 @@ Plugin 'plasticboy/vim-markdown'
 
 " ruby inline execution
 Bundle 't9md/vim-ruby-xmpfilter'
+
+" airline plugin
+Plugin 'bling/vim-airline'
 
 
 " All of your Plugins must be added before the following line
@@ -165,3 +172,6 @@ autocmd FileType ruby imap <buffer> <D-i> <Plug>(xmpfilter-mark)
 autocmd FileType ruby nmap <buffer> <D-r> <Plug>(xmpfilter-run)
 autocmd FileType ruby xmap <buffer> <D-r> <Plug>(xmpfilter-run)
 autocmd FileType ruby imap <buffer> <D-r> <Plug>(xmpfilter-run)
+
+" start airline for single tab
+set laststatus=2

@@ -16,3 +16,8 @@ Host utcs
 Host utcs2
   HostName altoids.cs.utexas.edu
   User ankit
+
+Host oslab
+  HostName fyra.csres.utexas.edu
+  User goyal
+  IdentityFile /Users/ankit/.ssh/id_rsa_os
