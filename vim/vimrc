@@ -114,7 +114,7 @@ set guifont=Monaco:h13
 " Funky ctrlp addon settings
 let g:ctrlp_extensions = ['funky']
 nnoremap <Leader>m :CtrlPFunky<Cr>
-nnoremap <C-b> :ctrlPBuffer<Cr>
+"nnoremap <C-b> :ctrlPBuffer<Cr>
 nnoremap <Leader>M :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 let g:ctrlp_funky_syntax_highlight = 1
 
