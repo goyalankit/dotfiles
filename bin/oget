@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "[Remote] wget $1 -P ~/os_papers"
+ssh ankit@linux.cs.utexas.edu "wget $1 -P ~/os_papers"
+echo "[Remote] File received."
+osync
+echo "[Local] Synched to local machine"
