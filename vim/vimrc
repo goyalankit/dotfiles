@@ -73,6 +73,9 @@ Bundle 't9md/vim-ruby-xmpfilter'
 " airline plugin
 Plugin 'bling/vim-airline'
 
+" Gist
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -139,10 +142,11 @@ let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_rails = 1
 
 " DON'T USE arrow keys.
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+"
+"noremap <Up> <NOP>
+"noremap <Down> <NOP>
+"noremap <Left> <NOP>
+"noremap <Right> <NOP>
 
 " map tab navigation
 for i in range(1,9)

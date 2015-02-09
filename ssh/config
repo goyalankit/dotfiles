@@ -16,6 +16,12 @@ Host utcs
 Host utcs2
   HostName altoids.cs.utexas.edu
   User ankit
+  IdentityFile /Users/ankit/.ssh/id_rsa_utcs
+
+Host utcs3
+  HostName linux.cs.utexas.edu
+  User ankit
+  IdentityFile /Users/ankit/.ssh/id_rsa_utcs
 
 Host oslab
   HostName fyra.csres.utexas.edu

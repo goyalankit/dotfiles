@@ -1,1 +1,4 @@
 alias sz='source ~/.zshrc'
+alias todo='git grep -n -e TODO -e FIXME -e XXX -e OPTIMIZE'
+alias hide='chflags hidden'
+alias unhide='chflags nohidden'
