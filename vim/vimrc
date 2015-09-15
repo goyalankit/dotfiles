@@ -78,6 +78,7 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 
 Bundle 'slim-template/vim-slim.git'
+Bundle 'tfnico/vim-gradle'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -181,3 +182,4 @@ autocmd FileType ruby imap <buffer> <D-r> <Plug>(xmpfilter-run)
 
 " start airline for single tab
 set laststatus=2
+set tabstop=2 shiftwidth=2 expandtab
