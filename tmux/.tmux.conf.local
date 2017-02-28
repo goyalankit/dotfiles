@@ -100,8 +100,8 @@ tmux_conf_new_panes_retain_current_path=true
 # prompt for session name when creating a new session, possible values are:
 #   - true
 #   - false
-tmux_conf_new_session_prompt=false
-#tmux_conf_new_session_prompt=true
+#tmux_conf_new_session_prompt=false
+tmux_conf_new_session_prompt=true
 
 # if you're running tmux within iTerm2
 #   - and tmux is 1.9 or 1.9a
@@ -137,4 +137,18 @@ bind -n M-Right select-pane -R
 bind -n M-Up select-pane -U
 bind -n M-Down select-pane -D
 
+# Synchronize panes using i
+bind i set-window-option synchronize-panes
+
 set-option -g allow-rename off
+
+# sane scrolling:
+bind -n WheelUpPane if-shell -F -t = "#{mouse_any_flag}" "send-keys -M" "if -Ft= '#{pane_in_mode}' 'send-keys -M' 'copy-mode -e; send-keys -M'"
+
+# Use vim key bindings
+set-window-option -g mode-keys vi
+
+# Vim way to copy paste stuff
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
+

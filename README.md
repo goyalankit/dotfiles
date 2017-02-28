@@ -15,7 +15,9 @@ vim ~/.vimrc +BundleInstall
 
 ### tmux
 ```
-ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/.dotfiles/tmux/.tmux.conf.local ~/.tmux.conf.local
+
 ```
 Tmux config taken from: https://github.com/gpakosz/.tmux
 
