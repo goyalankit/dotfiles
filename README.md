@@ -17,5 +17,7 @@ vim ~/.vimrc +BundleInstall
 ```
 ln -s ~/.dotfiles/tmux/tmux.conf ~/.tmux.conf
 ```
+Tmux config taken from: https://github.com/gpakosz/.tmux
+
 
 All the configurations should be linked to it dot part in home directory
