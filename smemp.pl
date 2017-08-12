@@ -1,4 +1,6 @@
-opyright Ben Maurer 
+#!/usr/bin/perl
+
+# Copyright Ben Maurer 
 # you can distribute this under the MIT/X11 License
 
 use Linux::Smaps;
